@@ -1,0 +1,22 @@
+2017-07-13 20:18:02,993 INFO(kafka.utils.VerifiableProperties:68)-Verifying properties
+2017-07-13 20:18:03,072 INFO(kafka.utils.VerifiableProperties:68)-Property batch.num.messages is overridden to 200
+2017-07-13 20:18:03,073 WARN(kafka.utils.VerifiableProperties:83)-Property busi.topic is not valid
+2017-07-13 20:18:03,074 INFO(kafka.utils.VerifiableProperties:68)-Property metadata.broker.list is overridden to 10.1.24.100:9092,10.1.24.101:9092,10.1.24.102:9092,10.1.24.103:9092,10.1.24.104:9092,10.1.24.105:9092,10.1.24.106:9092,10.1.24.107:9092,10.1.24.108:9092,10.1.24.109:9092,10.1.24.110:9092,10.1.24.111:9092,10.1.24.112:9092,10.1.24.113:9092,10.1.24.114:9092,10.1.24.115:9092,10.1.24.116:9092,10.1.24.117:9092,10.1.24.118:9092,10.1.24.119:9092,10.1.24.120:9092,10.1.24.121:9092,10.1.24.122:9092,10.1.24.123:9092,
+2017-07-13 20:18:03,075 INFO(kafka.utils.VerifiableProperties:68)-Property producer.type is overridden to async
+2017-07-13 20:18:03,076 INFO(kafka.utils.VerifiableProperties:68)-Property request.required.acks is overridden to 0
+2017-07-13 20:18:03,440 INFO(kafka.producer.Producer:68)-Shutting down producer
+2017-07-13 20:18:03,490 INFO(kafka.client.ClientUtils$:68)-Fetching metadata from broker BrokerEndPoint(18,10.1.24.118,9092) with correlation id 0 for 1 topic(s) Set(test)
+2017-07-13 20:18:03,514 INFO(kafka.producer.async.ProducerSendThread:68)-Begin shutting down ProducerSendThread
+2017-07-13 20:18:03,688 INFO(kafka.producer.SyncProducer:68)-Connected to 10.1.24.118:9092 for producing
+2017-07-13 20:18:03,760 INFO(kafka.producer.SyncProducer:68)-Disconnecting from 10.1.24.118:9092
+2017-07-13 20:18:05,004 INFO(kafka.producer.SyncProducer:68)-Connected to 10.1.24.102:9092 for producing
+2017-07-13 20:18:05,020 INFO(kafka.producer.SyncProducer:68)-Connected to 10.1.24.101:9092 for producing
+2017-07-13 20:18:05,063 INFO(kafka.producer.SyncProducer:68)-Connected to 10.1.24.114:9092 for producing
+2017-07-13 20:18:05,078 INFO(kafka.producer.SyncProducer:68)-Connected to 10.1.24.100:9092 for producing
+2017-07-13 20:18:07,583 INFO(kafka.producer.async.ProducerSendThread:68)-Shutdown ProducerSendThread complete
+2017-07-13 20:18:07,583 INFO(kafka.producer.ProducerPool:68)-Closing all sync producers
+2017-07-13 20:18:07,585 INFO(kafka.producer.SyncProducer:68)-Disconnecting from 10.1.24.102:9092
+2017-07-13 20:18:07,585 INFO(kafka.producer.SyncProducer:68)-Disconnecting from 10.1.24.101:9092
+2017-07-13 20:18:07,586 INFO(kafka.producer.SyncProducer:68)-Disconnecting from 10.1.24.114:9092
+2017-07-13 20:18:07,586 INFO(kafka.producer.SyncProducer:68)-Disconnecting from 10.1.24.100:9092
+2017-07-13 20:18:07,587 INFO(kafka.producer.Producer:68)-Producer shutdown completed in 4145 ms
