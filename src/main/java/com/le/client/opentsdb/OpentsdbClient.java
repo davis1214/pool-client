@@ -1,7 +1,10 @@
-package com.le.client.opentsdb.client;
+package com.le.client.opentsdb;
 
 
+import com.le.client.http.HttpClient;
+import com.le.client.http.HttpClientImpl;
 import com.le.client.opentsdb.builder.MetricBuilder;
+import com.le.client.http.ExpectResponse;
 import com.le.client.opentsdb.request.Filter;
 import com.le.client.opentsdb.request.Query;
 import com.le.client.opentsdb.request.QueryBuilder;
@@ -81,6 +84,7 @@ public class OpentsdbClient {
     public OpentsdbClient(String opentsdbUrl) {
         this.opentsdbUrl = opentsdbUrl;
         this.httpClient = new HttpClientImpl(opentsdbUrl);
+
     }
 
     public String getOpentsdbUrl() {

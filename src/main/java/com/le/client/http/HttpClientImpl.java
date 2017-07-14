@@ -1,7 +1,8 @@
-package com.le.client.opentsdb.client;
+package com.le.client.http;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.le.pool.http.PoolingHttpClient;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -70,10 +71,10 @@ public class HttpClientImpl implements HttpClient {
     @Override
     public void shutdown() {
         try {
-            if(this.httpClient != null){
+            if (this.httpClient != null) {
                 this.httpClient.shutdown();
             }
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }

@@ -2,8 +2,7 @@ package com.le.client.opentsdb;
 
 import com.le.client.opentsdb.builder.Metric;
 import com.le.client.opentsdb.builder.MetricBuilder;
-import com.le.client.opentsdb.client.ExecutorApiClient;
-import com.le.client.opentsdb.client.OpentsdbClient;
+import com.le.client.http.ExecutorApiClient;
 import com.le.util.SplitUtil;
 import jregex.Matcher;
 import jregex.Pattern;
@@ -16,9 +15,9 @@ import java.util.Random;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class OpentsdbDao {
+public class ShuffledOpentsdbClient {
 
-    private static final Logger logger = LoggerFactory.getLogger(OpentsdbDao.class);
+    private static final Logger logger = LoggerFactory.getLogger(ShuffledOpentsdbClient.class);
 
     private String urls;
     private String[] splitUrls;
@@ -40,7 +39,7 @@ public class OpentsdbDao {
     private ExecutorApiClient apiclient = null;
     private Pattern pattern;
 
-    public OpentsdbDao(String urls) {
+    public ShuffledOpentsdbClient(String urls) {
         this.urls = urls;
         this.splitUrls = SplitUtil.splitPreserveAllTokens(this.urls, ",");
         this.masterUrl = splitUrls[random.nextInt(splitUrls.length)];

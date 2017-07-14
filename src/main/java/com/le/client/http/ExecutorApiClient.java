@@ -1,4 +1,4 @@
-package com.le.client.opentsdb.client;
+package com.le.client.http;
 
 import java.io.IOException;
 import java.net.URI;

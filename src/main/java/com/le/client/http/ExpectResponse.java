@@ -1,4 +1,4 @@
-package com.le.client.opentsdb.client;
+package com.le.client.http;
 
 /**
  * <pre>
@@ -7,7 +7,7 @@ package com.le.client.opentsdb.client;
  * 
  * </pre>
  * 
- * @author argan
+ * @author davis
  *
  */
 public enum ExpectResponse {

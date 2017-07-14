@@ -1,4 +1,4 @@
-package com.le.client.opentsdb.client;
+package com.le.client.http;
 
 import com.le.client.opentsdb.builder.MetricBuilder;
 import com.le.client.opentsdb.request.QueryBuilder;

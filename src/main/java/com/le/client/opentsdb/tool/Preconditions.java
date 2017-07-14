@@ -1,4 +1,4 @@
-package com.le.pool.opentsdb.util;
+package com.le.client.opentsdb.tool;
 
 import com.google.common.annotations.VisibleForTesting;
 

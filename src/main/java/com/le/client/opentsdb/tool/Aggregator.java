@@ -1,4 +1,4 @@
-package com.le.pool.opentsdb.util;
+package com.le.client.opentsdb.tool;
 
 /**
  * Created by shifeng on 2016/5/19.

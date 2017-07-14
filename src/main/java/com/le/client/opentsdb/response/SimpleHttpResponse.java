@@ -1,7 +1,7 @@
 package com.le.client.opentsdb.response;
 
 /**
- * @author argan
+ * @author davis
  *
  */
 public class SimpleHttpResponse {
